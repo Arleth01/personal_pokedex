@@ -6,6 +6,40 @@ html{
    margin: 0px;
    padding: 0px;
  }
+ .poke{
+   height: 150px;
+   width: 50%;
+   transition: .5s;
+   margin:auto;
+   margin-left: 300px;
+   animation:spin 2s linear;
+
+ }
+ @keyframes spin {
+   100% {
+     transform:rotate(360deg);
+
+   }
+ }
+.second_content{
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+}
+ #card_one{
+   width: 200px;
+   height: 350px;
+   background-color: lightblue;
+   border-radius: 5px;
+   box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+ }
+
+ @keyframes flip {
+   100%{
+     background-color: red;
+     transform: rotateY(180deg);
+   }
+ }
 .topnav a{
   color: #FDFEFB;
   overflow: hidden;
