@@ -2,3 +2,38 @@ html{
    background: url(http://inn.spb.ru/images/500/DSC100558047.png) no-repeat center center fixed;
    background-size: cover;
  }
+ {
+   margin: 0px;
+   padding: 0px;
+ }
+.topnav a{
+  color: #FDFEFB;
+  overflow: hidden;
+  text-decoration: none;
+}
+.topnav a:hover {
+  padding: 14px 16px;
+  background-color: #F5E663;
+  text-align: center;
+  font-size: 17px;
+}
+.home{
+  color: white;
+}
+.characters{
+  color: white;
+}
+.about{
+  color: white;
+}
+.store{
+  color: white;
+}
+
+/* .topnav a{
+  float: left;
+  color: ##58FCEC;
+  text-align: center;
+  text-decoration: none;
+  font size: 17px;
+} */
