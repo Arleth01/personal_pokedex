@@ -2,10 +2,11 @@ html{
    background: url(http://inn.spb.ru/images/500/DSC100558047.png) no-repeat center center fixed;
    background-size: cover;
  }
- {
+ /* {
    margin: 0px;
    padding: 0px;
- }
+ } */
+ /* header below */
  .poke{
    height: 150px;
    width: 50%;
@@ -15,16 +16,72 @@ html{
    animation:spin 2s linear;
 
  }
+ .topnav a{
+   color: #FDFEFB;
+   overflow: hidden;
+   text-decoration: none;
+ }
+ .topnav a:hover {
+   padding: 14px 16px;
+   background-color: #F5E663;
+   text-align: center;
+   font-size: 17px;
+ }
+ .home{
+   color: white;
+ }
+ .characters{
+   color: white;
+ }
+ .about{
+   color: white;
+ }
+ .store{
+   color: white;
+ }
+
  @keyframes spin {
    100% {
      transform:rotate(360deg);
 
    }
  }
+ .cp{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   height: 75%;
+ }
+ .dp{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   height: 75%;
+ }
+ .sp{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   height: 75%;
+ }
+ /* poke cards */
 .second_content{
   width: 100%;
   height: 400px;
   background-color: #fff;
+  display: inline-block;
+}
+.third_content{
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  display: inline-block;
+  }
+div{
+  border: 1px solid black;
 }
  #card_one{
    width: 200px;
@@ -32,6 +89,23 @@ html{
    background-color: lightblue;
    border-radius: 5px;
    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+   display: inline-block;
+ }
+ #card_two{
+   width: 200px;
+   height: 350px;
+   background-color: lightblue;
+   border-radius: 5px;
+   box-shadow: : 3px 3px rgba(0, 0, 0, 0, 5,);
+   display: inline-block;
+ }
+ #card_three{
+   width: 200px;
+   height: 350px;
+   background-color: lightblue;
+   border-radius: 5px;
+   box-shadow: 3px 3px rgba(0, 0, 0, 0, 5,);
+   display: inline-block;
  }
 
  @keyframes flip {
@@ -40,7 +114,7 @@ html{
      transform: rotateY(180deg);
    }
  }
-.topnav a{
+/* .topnav a{
   color: #FDFEFB;
   overflow: hidden;
   text-decoration: none;
@@ -62,7 +136,7 @@ html{
 }
 .store{
   color: white;
-}
+} */
 
 /* .topnav a{
   float: left;
