@@ -13,7 +13,7 @@ class Pokemon{
   }
 }
 
-axios.get("http://fizal.me/pokeapi/api/v2/name/charmander.json")
+axios.get("https://fizal.me/pokeapi/api/v2/name/charmander.json")
 .then(function(response){
   console.log(response.data)
      let charmander = new Pokemon (response.data.id,
@@ -32,7 +32,7 @@ axios.get("http://fizal.me/pokeapi/api/v2/name/charmander.json")
       document.getElementById('c5').innerHTML="hp - "+charmander.hp;
 
 });
-axios.get("http://fizal.me/pokeapi/api/v2/name/smeargle.json")
+axios.get("https://fizal.me/pokeapi/api/v2/name/smeargle.json")
 .then(function(response){
   let smeargle = new Pokemon (response.data.id,
       response.data.name,
@@ -47,7 +47,7 @@ document.getElementById('s3').innerHTML="defense - "+smeargle.defense;
 document.getElementById('s4').innerHTML="attack - "+smeargle.attack;
 document.getElementById('s5').innerHTML="hp - "+smeargle.hp;
 });
-axios.get("http://fizal.me/pokeapi/api/v2/name/dewgong.json")
+axios.get("https://fizal.me/pokeapi/api/v2/name/dewgong.json")
 .then(function(response){
   let dewgong = new Pokemon (response.data.id,
     response.data.name,
