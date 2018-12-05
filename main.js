@@ -1,4 +1,16 @@
-console.log();
+class trainer{
+  constructor(name){
+    this.name= name;
+  }
+  all(){
+    this.pokemon= [];
+  }
+}
+
+let arleth = new trainer('arleth');
+
+
+
 class Pokemon{
   constructor(id, name, defense, attack, hp, abilities){
     this.id = id;
@@ -32,6 +44,9 @@ axios.get("https://fizal.me/pokeapi/api/v2/name/charmander.json")
       document.getElementById('c5').innerHTML="hp - "+charmander.hp;
 
 });
+
+
+
 axios.get("https://fizal.me/pokeapi/api/v2/name/smeargle.json")
 .then(function(response){
   let smeargle = new Pokemon (response.data.id,
@@ -47,6 +62,9 @@ document.getElementById('s3').innerHTML="defense - "+smeargle.defense;
 document.getElementById('s4').innerHTML="attack - "+smeargle.attack;
 document.getElementById('s5').innerHTML="hp - "+smeargle.hp;
 });
+
+
+
 axios.get("https://fizal.me/pokeapi/api/v2/name/dewgong.json")
 .then(function(response){
   let dewgong = new Pokemon (response.data.id,
@@ -57,11 +75,15 @@ axios.get("https://fizal.me/pokeapi/api/v2/name/dewgong.json")
     response.data.abilities[0].ability
 )
 document.getElementById('d1').innerHTML="id - "+dewgong.id;
-document.getElementById('d2'). innerHTML="name - "+dewgong.name;
+document.getElementById('d2').innerHTML="name - "+dewgong.name;
 document.getElementById('d3').innerHTML="defense - "+dewgong.defense;
 document.getElementById('d4').innerHTML="attack - "+dewgong.attack;
 document.getElementById('d5').innerHTML="hp - "+dewgong.hp;
 });
+arleth.all(charmander);
+arleth.all(smeargle);
+arleth.all(dewgong);
+console.log(arleth.all);
 
 let myImage = document.getElementById('card_one');
   myImage.addEventListener('click',  function(){
