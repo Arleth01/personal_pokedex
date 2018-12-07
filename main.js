@@ -27,7 +27,7 @@ class Pokemon{
 
 axios.get("https://fizal.me/pokeapi/api/v2/name/charmander.json")
 .then(function(response){
-  console.log(response.data)
+  // console.log(response.data)
      let charmander = new Pokemon (response.data.id,
           response.data.name,
           response.data.stats[3].base_stat,
@@ -42,7 +42,7 @@ axios.get("https://fizal.me/pokeapi/api/v2/name/charmander.json")
       document.getElementById('c3').innerHTML="defense - "+charmander.defense;
       document.getElementById('c4').innerHTML="attack - "+charmander.attack;
       document.getElementById('c5').innerHTML="hp - "+charmander.hp;
-
+arleth.all(charmander);
 });
 
 
@@ -61,6 +61,7 @@ document.getElementById('s2').innerHTML="name - "+smeargle.name;
 document.getElementById('s3').innerHTML="defense - "+smeargle.defense;
 document.getElementById('s4').innerHTML="attack - "+smeargle.attack;
 document.getElementById('s5').innerHTML="hp - "+smeargle.hp;
+arleth.all(smeargle);
 });
 
 
@@ -79,22 +80,35 @@ document.getElementById('d2').innerHTML="name - "+dewgong.name;
 document.getElementById('d3').innerHTML="defense - "+dewgong.defense;
 document.getElementById('d4').innerHTML="attack - "+dewgong.attack;
 document.getElementById('d5').innerHTML="hp - "+dewgong.hp;
-});
-arleth.all(charmander);
-arleth.all(smeargle);
+
 arleth.all(dewgong);
-console.log(arleth.all);
+});
+
+
+console.log(arleth);
 
 let myImage = document.getElementById('card_one');
   myImage.addEventListener('click',  function(){
-  myImage.style.animation = "flip 2s"
+  myImage.style.animation = "flip 2s";
+  setTimeout(function(){
+    myImage.style.animation = "";
+  }, 1000);
+
 });
 let myImage2 = document.getElementById('card_two');
   myImage2.addEventListener('click', function(){
-  myImage2.style.animation = "flip 2s"
+  myImage2.style.animation = "flip 2s";
+setTimeout(function(){
+  myImage2.style.animation = "";
+}, 1000);
+
 });
 
 let myImage3 = document.getElementById('card_three');
   myImage3.addEventListener('click', function(){
   myImage3.style.animation = "flip 2s"
+  setTimeout(function(){
+    myImage3.style.animation = "";
+  }, 1000);
+
 });
