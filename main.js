@@ -1,4 +1,4 @@
-class trainer{
+(class trainer{
   constructor(name){
     this.name= name;
   }
